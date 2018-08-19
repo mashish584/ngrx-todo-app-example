@@ -1,0 +1,15 @@
+.todo-section {
+    padding: 75px 25px;
+    padding-bottom: 25px;
+}
+
+.btn-remove {
+    display: block;
+    width: 150px;
+    border-radius: 50px;
+    margin: 10px auto;
+    padding: 10px 0;
+    color: #fff;
+    background: #EB5757;
+    border: 5px solid #EB5757;
+}

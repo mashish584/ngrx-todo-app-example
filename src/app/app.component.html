@@ -1,0 +1,5 @@
+<app-header [count]="count"></app-header>
+<div class="todo-section">
+  <app-list></app-list>
+</div>
+<button *ngIf="showButton" (click)="clearTasks()" class="btn-remove">Remove All Tasks</button>

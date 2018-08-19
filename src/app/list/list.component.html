@@ -1,0 +1,15 @@
+<div [@appearAnim]="(taskList|async).todo.length">
+  <div *ngFor="let todo of (taskList|async).todo;let i=index;" class="task-item clearfix">
+    <span class="task-date">{{todo.date | date:'longDate'}}</span>
+    <span class="count"></span>
+    <p [ngClass]="{'hide':(editMode && active==i),'complete':todo.complete}" class="task-desc">
+      {{todo.task}}
+      <span *ngIf="!todo.complete" (click)="showEdit(i)" class="fa fa-edit"></span>
+    </p>
+    <div [ngClass]="{'hide':!(editMode && active==i)}" class="update-form">
+      <textarea #task name="update-task">{{todo.task}}</textarea>
+      <span (click)="update(todo._id,task.value)" class="btn-update" style="cursor: pointer;">Update</span>
+    </div>
+    <button (click)="updateStatus(todo._id,todo.complete)" class="btn-complete fa fa-check"></button>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div id="header">
+  <div class="form-group">
+    <input type="text" [(ngModel)]="task" placeholder="Add new Task" autocomplete="off">
+    <button (click)="addTask()" class="fa fa-plus"></button>
+  </div>
+  <span class="task-count">Total Tasks: {{total}}</span>
+</div>

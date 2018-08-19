@@ -1,0 +1,39 @@
+#header {
+    position: relative;
+    background: #EB5757;
+    height: 200px;
+}
+
+.form-group {
+    position: absolute;
+    width: 500px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-250px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25);
+}
+
+.task-count {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+}
+
+button {
+    position: absolute;
+    right: 0;
+    padding: 10px 55px;
+    background: #F76060;
+    color: #fff;
+    border: none;
+    height: 100%;
+    bottom: 0;
+}
